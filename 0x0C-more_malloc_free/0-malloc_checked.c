@@ -1,35 +1,39 @@
-#include "main.h"                                                                                                                     
+#include "main.h"
 
-                                                                                                                                      
 
-#include <stdlib.h>                                                                                                                   
 
-                                                                                                                                      
-
-                                                                                                                                      
-
-                                                                                                                                      
-
-/**                                                                                                                                   
+/**
  *
- *  *malloc_checked - array for prints a string                                                                                          
+ *  *malloc_checked - array for prints a string
  *
- *   *@b: number of memory                                                                                                                
+ *   *@b: number of memory
  *
- *    *Return: void                                                                                                                        
+ *    *Return: void
  *
- *     */                                                                                                                                   
+ *     */
 
-void *malloc_checked(unsigned int b) 
+
+
+void *malloc_checked(unsigned int b)
+
 {
 
-void *p;
+	void *p;
 
-p = malloc(b);
-if (p == null)
-{
-exit (98);
-}
 
-return (p);
+
+	p = malloc(b);
+
+	if (p == NULL)
+
+	{
+
+		exit(98);
+
+	}
+
+
+
+	return (p);
+
 }

@@ -1,21 +1,29 @@
-Main.h
-
 #ifndef MAIN_H
 
 #define MAIN_H
 
-#include <stddef.h>
+
+
+#include <stdio.h>
 
 #include <stdlib.h>
 
+#include <limits.h>
+
+
+
 int _putchar(char c);
 
-char *create_array(unsigned int size, char c);
+void *malloc_checked(unsigned int b);
 
-char *str_concat(char *s1, char *s2);
+char *string_nconcat(char *s1, char *s2, unsigned int n);
 
-int **alloc_grid(int width, int height);
+void *_calloc(unsigned int nmedb, unsigned int size);
 
-void free_grid(int **grid, int height);
+int *array_range(int min, int max);
+
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
+
+
 
 #endif
